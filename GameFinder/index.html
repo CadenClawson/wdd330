@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GameFinder – Discover Your Next Game</title>
+  <meta name="description" content="Find new games with search, filters, ratings, screenshots, trailers, and wishlist features.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <h1>GameFinder</h1>
+    <p>Find your next favorite game.</p>
+  </header>
+
+  <main id="main">
+
+    <!-- Search Section -->
+    <section id="search-section">
+      <h2>Search Games</h2>
+      <form id="search-form">
+        <label for="search-input">Game Title</label>
+        <input id="search-input" type="text" placeholder="Elden Ring, Halo, Stardew Valley..." required>
+
+        <label for="genre-select">Genre</label>
+        <select id="genre-select">
+          <option value="">Any</option>
+        </select>
+
+        <label for="platform-select">Platform</label>
+        <select id="platform-select">
+          <option value="">Any</option>
+        </select>
+
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section">
+      <h2>Results</h2>
+      <div id="results-grid" class="grid"></div>
+    </section>
+
+    <!-- Detail Overlay -->
+    <section id="detail-section" style="display:none;">
+      <div id="game-detail"></div>
+    </section>
+
+    <!-- Trending Section -->
+    <section id="trending-section">
+      <h2>Trending Games</h2>
+      <div id="trending-grid" class="grid"></div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <section id="wishlist-section">
+      <h2>Your Wishlist</h2>
+      <div id="wishlist-grid" class="grid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Powered by RAWG & YouTube APIs</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
